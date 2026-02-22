@@ -1,13 +1,29 @@
-<h1>ADMIN PANEL</h1>
-<input id="name" placeholder="Product name">
-<input id="price" placeholder="Price">
-<select id="currency">
-  <option>USD</option><option>EUR</option><option>INR</option>
-  <option>JPY</option><option>GBP</option><option>Dinar</option>
-</select>
-<input id="image" placeholder="Image URL">
-<button onclick="add()">ADD PRODUCT</button>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<pre id="output"></pre>
+<div class="container">
+  <h2>ADMIN DASHBOARD</h2>
+
+  <input placeholder="Product Name" id="name"><br><br>
+  <input placeholder="Image URL" id="img"><br><br>
+  <input placeholder="Price" id="price"><br><br>
+  <select id="currency">
+    <option>$</option><option>€</option><option>₹</option>
+    <option>¥</option><option>£</option><option>د</option>
+  </select><br><br>
+
+  <button onclick="addProduct()">ADD PRODUCT</button>
+
+  <h3>SET DROP DATE</h3>
+  <input type="datetime-local" id="drop">
+  <button onclick="setDrop()">SET</button>
+</div>
 
 <script src="js/admin.js"></script>
+</body>
+</html>
