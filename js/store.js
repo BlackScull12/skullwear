@@ -14,10 +14,15 @@ fetch("data/products.json")
           <h3>${p.name}</h3>
           <p>${p.price} ${p.currency}</p>
           <a href="checkout.html">BUY</a>
-        </div>`;
+        </div>
+      `;
     });
   })
   .catch(err => {
     console.error(err);
-    document.body.innerHTML += "<p style='color:red'>Store failed to load</p>";
+
+    const error = document.createElement("p");
+    error.style.color = "red";
+    error.textContent = "Store failed to load";
+    document.body.appendChild(error);
   });
