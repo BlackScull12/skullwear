@@ -1,8 +1,13 @@
 const canvas = document.getElementById("skulls");
 const ctx = canvas.getContext("2d");
 
-canvas.width = innerWidth;
-canvas.height = innerHeight;
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+resize();
+window.addEventListener("resize", resize);
 
 let skulls = Array.from({ length: 40 }, () => ({
   x: Math.random() * canvas.width,
