@@ -1,8 +1,26 @@
-<h1>CHECKOUT</h1>
-<p>Payments accepted:</p>
-<ul>
-  <li>USD</li><li>EUR</li><li>INR</li>
-  <li>JPY</li><li>GBP</li><li>Dinar</li>
-</ul>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<a href="https://buy.stripe.com/YOUR_LINK">PAY NOW</a>
+<div class="container">
+  <h2>CHECKOUT</h2>
+
+  <select id="currency">
+    <option value="$">USD ($)</option>
+    <option value="€">EUR (€)</option>
+    <option value="₹">INR (₹)</option>
+    <option value="¥">YEN (¥)</option>
+    <option value="£">POUND (£)</option>
+    <option value="د">DINAR (د)</option>
+  </select>
+
+  <button onclick="pay()">PLACE ORDER</button>
+</div>
+
+<script src="js/checkout.js"></script>
+</body>
+</html>
