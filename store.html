@@ -1,4 +1,26 @@
-<script src="js/lock.js"></script>
-<h1>STORE</h1>
-<div id="products"></div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="skull-bg"></div>
+
+<div class="container" id="lock">
+  <h2>ENTER ACCESS</h2>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="unlock()">ENTER</button>
+  <p id="msg"></p>
+</div>
+
+<div class="container" id="store" style="display:none;">
+  <h2>DROP LIVE</h2>
+  <div id="products"></div>
+</div>
+
 <script src="js/store.js"></script>
+<script src="js/skulls.js"></script>
+</body>
+</html>
