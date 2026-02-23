@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SKULLWEAR</title>
+  <meta charset="UTF-8" />
+  <title>DROP//VOID</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="skull-bg"></div>
+<canvas id="skullCanvas"></canvas>
 
 <header>
-  <h1>SKULLWEAR</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="store.html">Store</a>
-  </nav>
+  <h1>DROP//VOID</h1>
+  <p>LIMITED CLOTHING DROPS</p>
+  <a href="store.html" class="btn">ENTER STORE</a>
 </header>
 
-<div class="container">
-  <h2>LIMITED DROPS ONLY</h2>
-  <p>No restocks. No mercy.</p>
-</div>
+<div id="adminBubble">⚙</div>
 
-<script src="js/skulls.js"></script>
-  <!-- Admin Bubble Button -->
-<div id="admin-bubble" onclick="openAdmin()">ADMIN</div>
+<script src="js/skull.js"></script>
+<script src="js/auth.js"></script>
 </body>
 </html>
